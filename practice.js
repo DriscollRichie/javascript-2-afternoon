@@ -15,7 +15,11 @@
 */
 
 //Code here
-
+var me = {
+  name: 'Richie',
+  age: 21
+}
+//alert(me.name);
 
 
 ////////// PROBLEM 2 //////////
@@ -26,7 +30,14 @@
 */
 
 //Code here
-
+var favoriteThings = {
+  band: 'Rush',
+  food: 'buffalo wings',
+  person: 'Richie',
+  book: 'The Secret',
+  movie: 'Blow',
+  holiday: 'Christmas',
+}
 
 
 /*
@@ -34,7 +45,8 @@
 */
 
 //Code here
-
+favoriteThings.car = 'Bently Bentayga';
+favoriteThings.brand = 'Adidas';
 
 
 /*
@@ -42,7 +54,8 @@
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 
 
 ////////// PROBLEM 3 //////////
@@ -56,15 +69,16 @@
 */
 
 //Code here
-
-
+var backPack = {};
+var item = 'firstPocket';
+backPack[item] = 'chapstick';
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
-
+//alert(backPack);
 
 
 /*
@@ -74,7 +88,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+//console.log(backPack);
 
 
 ////////// PROBLEM 4 //////////
@@ -97,7 +111,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 ////////// EXTRA PRACTICE PROBLEMS BELOW //////////
@@ -109,7 +124,7 @@ var user2 = {
 */
 
 //Code Here
-
+var methodCollection = {};
 
 
 /*
@@ -118,7 +133,12 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello = function() {
+  alert('hello');
+};
+methodCollection.logHello = function() {
+  console.log('hello');
+}
 
 
 /*
@@ -126,7 +146,8 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -137,7 +158,14 @@ var user2 = {
 */
 
 //Code Here
-
+function makePerson(name, birthday, ssn) {
+  var newPerson = {
+    name: name,
+    birthday: birthday,
+    ssn: ssn
+  };
+  return newPerson;
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -148,5 +176,12 @@ var user2 = {
 */
 
 //Code Here
-
+function makeCard(cardNumber, expirationDate, securityCode) {
+  var creditCard = {
+    creditCardNumber: cardNumber,
+    cardExpiration: expirationDate,
+    cardSecurityCode: securityCode
+  };
+  return creditCard;
+}
 
